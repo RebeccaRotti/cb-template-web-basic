@@ -16,17 +16,17 @@
    - Mars 3.69 m/s²
    - Jupiter 24.79 m/s²
 
-- `var v0` ist die Anfangsgeschwindigkeit und ist mit einem Formular und einem Inputfeld vom User einzugeben
+- `let v0` ist die Anfangsgeschwindigkeit und ist mit einem Formular und einem Inputfeld vom User einzugeben
 
-- `var derWinkel` ist der Winkel in dem der User wirft. Es darf nur eine Zahl zwischen 1 und 90 sein. Dieser Wert ist auch mit einem Inputfeld in einem Formular vom User einzugeben
+- `let derWinkel` ist der Winkel in dem der User wirft. Es darf nur eine Zahl zwischen 1 und 90 sein. Dieser Wert ist auch mit einem Inputfeld in einem Formular vom User einzugeben
   - Die Berechnung die du hier brauchst:<br>
   `derWinkel= derWinkel* ( Math.PI/ 180 )`
   
-- `var wurfweite` berechnet sich aus dem Wurfwinkel und der Anfangsgeschwindigkeit
+- `let wurfweite` berechnet sich aus dem Wurfwinkel und der Anfangsgeschwindigkeit
   - Die Berechnung sieht folgendermaßen aus: `wurfweite = ((v0 * v0) * Math.sin(2 * derWinkel)) / g`<br>
   Achtung: Runde das Ergebnis
   
-- `var entfernungZumMonster` speichert den Wert der zufällig gewählt wird. Er stellt die Entfernung zum Monster dar
+- `let entfernungZumMonster` speichert den Wert der zufällig gewählt wird. Er stellt die Entfernung zum Monster dar
   - `entfernungZumMonster= Math.random() * 90 + 10;`<br>
   Mit dieser Zeile generierst du eine zufällige Zahl
   - `entfernungZumMonster= Math.round(entfernungZumMonster)`<br>
